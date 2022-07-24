@@ -162,4 +162,5 @@ function fetchWeatherData() {
 
 fetchWeatherData();
 
+
 app.style.opacity = "1";
