@@ -50,13 +50,10 @@ function dayOfTheWeek(day, month, year) {
     "Friday",
     "Saturday",
   ];
-  console.log(new Date(`${year}/${month}/${day}`));
-  console.log(new Date(`${year}/${month}/${day}`).getDay())
   return week[new Date(`${year}/${month}/${day}`).getDay()];
 }
 
 function fetchWeatherData() {
-  console.log("chamando fetchWeatherData")
   fetch(
     `http://api.weatherapi.com/v1/current.json?key=b2504882e418449c9e7113840222007&q=${cityInput}&aqi=no`
   )
